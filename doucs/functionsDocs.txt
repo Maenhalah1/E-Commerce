@@ -1,0 +1,11 @@
+================================
+==== Functions Documentions ====
+================================
+
+- getFromAll($Fields, $table, $where=null , $FieldOrder, $ordering='DESC') => Select any Data from Any Table 
+
+$Fields => Data
+$table => from table
+$where=> condition
+$FieldOrder => order the data behvior $FiledOrder
+$ordering => Type Ordering

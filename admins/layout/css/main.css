@@ -1,0 +1,631 @@
+/* start Main rules*/
+body {
+    background-color: #F2F2F2;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.mycontainer{
+	width: 80%;
+	margin: auto;
+}
+.mainheader{
+	color:#555;
+	font-size: 50px;
+	text-align: center;
+	margin: 30px 0;
+	font-weight: bold;
+}
+a:hover,a:active {
+	text-decoration:none; 
+}
+.long-text {
+	max-width: 250px;
+	word-break: break-word;
+
+}
+.noData {
+	background-color: #F2F2F2;
+	padding: 5px 10px;
+	border-left: 6px solid #16a085; 
+}
+.noDataTables {
+	background-color: #FFF;
+	font-weight: bold;
+	font-size: 20px;
+	width: 60%;
+	margin: 20px auto;
+}
+
+/*end Main rules*/
+.selectboxit-container span, .selectboxit-container .selectboxit-options a{
+ 	height: 35px;
+ 	line-height: 35px;
+ }
+.selectboxit-container{
+
+	width: 70%;
+} 
+.selectboxit-container span, .selectboxit-container .selectboxit-options a {
+	font-size: 17px;
+}
+.selectboxit-container .selectboxit {
+	width: 100%;
+}
+  .selectboxit-container .selectboxit-options {
+
+    /* Set's the drop down options width to the same width as the drop down button */
+    width: 98%;
+
+    /* Set's the max-height property to only show a subset of the drop down items.
+       If you do not set a max-height property, SelectBoxIt will dynamically
+       position the dropdown (when opened) to make sure the drop down items are not
+       displayed outside of the current window viewport.
+    */
+    max-height: 240px;
+
+  }
+.selectboxit-container ul .subcatg a{
+	color:#444;
+	font-size: 16px;
+
+}
+.selectboxit-container ul .maincatg a{
+	font-weight: bold;
+}
+
+/*start login*/
+.login{
+	width: 350px;
+	margin: 100px auto;
+}
+.login input{
+	margin-bottom: 10px;
+	transition: .8s;
+}	
+.login .form-control , .login .btn {
+	
+	height: 40px;
+	font-size: 18px;
+
+}
+.login h2{
+	color: #666;
+	font-weight: bolder;
+	margin-bottom: 25px;
+}
+.login .span-notCorrect {
+	color: #F00;
+	display: block;
+	margin-bottom:10px;
+	padding-left: 5px;
+	font-weight: 700;
+}
+.span-notCorrect {
+	color: #F00;
+	display: block;
+	margin-bottom:10px;
+	padding-left: 5px;
+	font-weight: 700;
+}
+/*end login*/
+
+/* Start Edit Bootstrap navbar */
+
+.navbar {
+	border-radius: 0;
+	background-color: rgba(0,0,0,0);
+    border:none;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    
+}
+.navbar .navbar-brand {
+    color: #222;
+    font-weight: 700;
+    font-size: 27px;
+    margin-right: 15px;
+
+}
+.navbar .navbar-brand:active {
+    color: #222;
+   
+}
+.navbar .navbar-nav>li>a {
+    color: #000;
+    font-size: 18px;
+    
+}
+.navbar .mylinks-nav>li>a {
+	transition: .8s;
+}
+.navbar .navbar-nav>li>a.activeLink {
+	color:#16a085;
+	font-weight: bold;
+}
+.nav>li>a {
+	    padding: 14px 11px;
+}
+.navbar .navbar-nav>.open>a,
+ .navbar .navbar-nav>.open>a:focus,
+  .navbar .navbar-nav>.open>a:hover {
+    color: #fff;
+    background-color: #16a085;
+}
+.navbar .navbar-nav>li>a:focus{
+	color:#222;
+	}
+.navbar .navbar-nav>li>a:hover {
+	
+	margin-left:10px; 
+}
+.dropdown-menu {
+	padding: 0;
+	font-size: 1em;
+	background-color: #16a085;
+	border:none;
+	min-width: 185px;
+
+}
+.dropdown-menu>li>a {
+    padding: 9px 20px;
+    background-color: #16a085;
+    color:#FFF;
+    transition: padding 1s;
+}
+.dropdown-menu>li>a:hover {
+	font-weight: 700;
+	padding:9px 50px;
+	color:#FFF;
+	background-color: #16a085;
+}
+.navbar .navbar-brand:hover{
+	color:#222;
+}
+
+
+/* end Edit Bootstrap navbar */
+
+/* start Edit profile */
+
+.mainForm{
+	margin: 100px 0;
+}
+.mainForm h3 {
+	color:#555;
+	font-size: 50px;
+	text-align: center;
+	margin: 30px 0;
+}
+.mainForm form {
+	padding:7% 10%;
+	background-color: #EDEDED;
+	
+}
+.mainForm form .left {
+	width: 48%;
+	float:left;
+
+}
+.mainForm form .right{
+	width:48%;
+	float: right;
+}
+
+.mainForm form .field {
+	margin-bottom: 20px;
+	position: relative;
+}
+.mainForm form .field label {
+	display: block;
+	margin-bottom: 3px;
+	font-size: 19px;
+}
+.mainForm form .field input:not([type="submit"]):not([type="radio"]) {
+	position: relative;
+	border:none;
+	height: 35px;
+	width: 80%;
+	font-size: 17px;
+	background-color: rgba(0,0,0,0);
+	border-bottom: 2px solid #AAA;
+	transition: 1.3s;
+}
+.star {
+	position: absolute;
+    top: 43px;
+    right: 21%;
+    color: #ff3f3f;
+    font-weight: 800;
+    font-size: 19px;
+
+}
+.mainForm form .field input:focus {
+	outline: none;
+	border-bottom: 2px solid #16a085;
+
+}
+.mainForm form .bt {
+	text-align: center;
+}
+.mainForm form .field input[type="submit"] {
+	margin-top: 60px;
+	font-size: 20px;
+	padding: 7px 0;
+	width: 25%;
+	background-color: #16a085;
+	color: #FFF;
+	outline: none;
+	border:none;
+}
+.mainForm form .field input[type="submit"]:focus,
+.mainForm form .field input[type="submit"]:hover {
+	background-color: #0b9076;
+}
+
+
+.mainForm form .field .radiopart{
+	margin:15px 3px;
+}
+.mainForm form .field .radiofield {
+	margin: 3px 0;
+}
+.mainForm form .field .radiofield label{
+display: inline-block;
+font-size: 15px;
+}
+.clear {
+	clear: both;
+}
+
+
+/* end Edit profile */
+
+/* bootstrap edit class*/
+.alert{
+	text-align: center;
+	font-weight: 700;
+}
+
+
+.showing {
+	position: absolute;
+    top: 45px;
+    right: 17%;
+    color: #0B907F;
+}
+
+/* Edit Table Members */
+.main-table {
+	text-align: center;
+}
+.main-table tr {
+	background-color: #FFF;
+	box-shadow: 0px 4px 10px #CCC;
+}
+.main-table tr:first-child{
+	background-color: #0b9076;
+	color:#FFF;
+	font-weight: bold;
+
+}
+.main-table td {
+	vertical-align:middle !important; 
+}
+.btn {	
+	transition: all .6s;
+}
+.main-table tr td .btn {
+	padding:6px 10px !important; 
+	font-weight: bold;
+}
+.main-table td img {
+	max-width: 70px;
+	max-height: 70px;
+}
+.toAdd {
+	background-color: #0b9076;
+	font-weight: bold;
+	border:none;
+	display: inline-block;
+	margin: 1%;
+	padding: 10px 17px;
+	color: #FFF;
+	border-radius: 7px;
+	transition: all .6s;
+}
+.toAdd:hover,
+.toAdd:active,.toAdd:visited:hover{
+	color: #FFF;
+	text-decoration: none;
+	background-color: #06735e;
+}
+.toAdd:visited {
+	color: #FFF;
+	text-decoration: none;
+	background-color: #0b9076;
+}
+.fa-user-plus {
+	margin-right: 5px;
+}
+.activate {
+	margin-left: 4px;
+}
+/* Start Dashboard */
+.status {
+	text-align: center;
+}
+.status .status-ele {
+	padding: 25px 20px;
+	background-color: #EEE;
+	border:1px solid #CCC;
+	font-size: 18px;
+	border-radius: 10px;
+	color:#FFF;
+	position: relative;
+	overflow: hidden;
+}
+.status  .st-pending{
+	background-color: #D32F2F;	
+}
+.status .st-members {
+	background-color: #0288D1;
+}
+.status .st-items {
+	background-color: #9C27B0;
+}
+.status .st-comments {
+	background-color: #F57C00;
+}
+.status .status-ele i {
+	font-size: 85px;
+    position: absolute;
+    top: 33px;
+    left: 25px;
+
+}
+.status .st-comments i{
+	top: 25px;
+	font-size: 90px;
+	left: 22px
+}
+.status .st-items i {
+	font-size: 90px;
+	left:30px;
+}
+.status .status-ele .info {
+	float: right;
+	font-size: 15px;
+}
+.status .status-ele .info span {
+	font-size: 50px;
+	display: block;
+	font-weight: bold;
+}
+.status a{
+	color:#FFF;
+}
+.status a:hover{
+	color:#FFF;
+}
+.lastest {
+	margin: 50px 0;
+}
+.lastest .toggle-latest{
+	color: #777;
+	cursor: pointer;
+}
+.lastest .toggle-latest:hover{
+	color: #444;
+}
+
+.panel-default>.panel-heading {
+	font-weight: bold;
+	font-size: 17px;
+}
+.latest-item {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.latest-item li {
+	overflow:hidden;
+	padding: 10px;
+}
+.latest-item li:nth-child(odd){
+	background-color: #EEE;
+}
+.latest-item li .latest-user {
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 1.6;
+}
+.latest-item .btn {
+	padding: 3px 7px;
+}
+.latest-item li .btn-info {
+	margin-right: 5px;
+}
+.lastest .comment-box {
+	margin: 10px;
+	margin: 15px 5px;
+	display: flex;
+}
+
+.lastest .comment-box .head-comment {
+	width:20%;
+	margin-right:5%; 
+	padding: 10px 2px 0;
+	text-align: center;
+}
+.lastest .comment-box .head-comment .name-commenting,
+ .lastest .comment-box .head-comment .product-commenting {
+	display: block;
+}
+.lastest .comment-box .head-comment .name-commenting a {
+	color: #555;
+	font-weight: bold;
+}
+.lastest .comment-box .head-comment .name-commenting a:hover{
+	color:#000;
+}
+.lastest .comment-box .head-comment .product-commenting a{
+
+	margin-top: 3px;
+	color:#16a085;
+}
+.lastest .comment-box .head-comment .product-commenting a:hover {
+	color:#026b56;
+}
+.lastest .comment-box .body-comment {
+	width:75%;
+	background-color: #F2F2F2;
+	padding: 10px;
+	position: relative;
+	border-radius: 5px;
+} 
+.lastest .comment-box .body-comment:before{
+	content: "";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-color: transparent #F2F2F2 transparent transparent;
+	border-width: 15px;
+	position: absolute;
+	left: -27px;
+	top: 5px;
+}
+/* End Dashboard */
+
+/* Start Categories Manage*/
+.categories .panel-heading {
+	color:#555;
+	font-weight: bold;
+} 
+.categories .panel-body {
+	padding: 0;
+}
+.categories .catg {
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+	position: relative;
+	padding: 15px;
+	overflow: hidden;
+}
+.categories .catg h2 {
+	margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+    color: #555;
+    cursor: pointer;
+}
+.categories .catg .view-catg p {
+	margin:15px 0 15px 2px;
+}
+.categories .catg .catg-allspan {
+	margin:0 0 10px 2px;
+}
+.categories .catg:last-of-type ~ hr {
+	display: none;
+}
+.categories .catg .catg-span {
+	font-size: 13px;
+    color: #FFF;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    font-weight: 700;
+} 
+.categories .catg .catg-visible{
+	background: #e74c3c;
+}
+.categories .catg .catg-comments{
+	background: #415c77;
+}
+.categories .catg .catg-advs{
+	background: #27ae60;
+}
+.categories .catg .catg-buttons {
+	-webkit-transition: all .7s ease-in-out;
+	-moz-transition: all .7s ease-in-out;
+	transition: all .7s ease-in-out;
+	position: absolute;
+    top: 20px;
+    right: -330px;
+}
+.categories .catg:hover .catg-buttons {
+	right: 15px;
+}
+.categories .catg:hover {
+	background-color: #f2f2f2;
+}
+.categories .catg .catg-buttons .btn {
+	padding: 3px 10px;
+	font-weight: bold;
+}
+.categories .catg .catg-buttons .btn{
+	margin-right: 4px;
+}
+.categories hr {
+	margin:0;
+}
+.categories .options {
+	background-color: #EEE;
+	border:1px solid #DDD;
+	padding: 4px 6px;
+	font-size: 15px;
+	font-weight: 700;
+	border-radius: 4px;
+	line-height: 1.1;
+	color:#555;
+}
+.categories .options:not(:First-of-type){
+	margin-right: 8px;
+	
+}
+.categories .options a {
+	color: #888;
+}
+.categories .options span {
+	color: #888;
+	cursor: pointer;
+}
+.categories .options .active {
+	color: #16a085;
+	font-weight: bold;
+}
+.categories .fa {
+	margin-right: 5px;
+}
+/* End Categories Manage*/
+
+
+/* Start items Manage*/
+
+.itemAdd i{
+	font-size: 19px;
+    position: relative;
+    left: -2px;
+    top: 1px;
+}
+.main-table td .no-comments {
+	color: #bb1f1f;
+    font-size: 15px;
+    
+}
+.allcomment {
+	color: #0b9076;
+}
+/* Start items Manage*/
+
+
+/* Start Manage Comments*/
+
+.main-table .act-comm {
+	width: 105px;
+	position: relative;
+	text-align: center;
+}
+.main-table .act-comm i {
+	font-size: 16px;
+	
+}
