@@ -10,6 +10,14 @@ include "init.php";
 ?>
 <?php if(isset($_GET['id']) && $_GET['id'] == $_SESSION['uid']): ?>
 
+<?php 
+
+$stmt = $con->prepare("SELECT * FROM users WHERE UserID = ?");
+$stmt->execute(array($_SESSION['uid']));
+$userinfo = $stmt->fetch();
+$img_profile = $userinfo['Image_Profile'];
+
+?>
 <div class="info-profile newItem">
 	<h3 class="MainHeader">Edit My Profile</h3>
 	<div class="container">
@@ -18,46 +26,57 @@ include "init.php";
 			<div class="panel panel-default mypanel">
 				<div class="panel-heading">Edit My Profile</div>
 				<div class="panel-body">
+
 					<div class="add-form">
-						<form class="add-box" action="newitem.php" method="POST">
+						<form class="add-box">
 							<div class="field">
 								<label>User Name</label>
-								<input type="text" name="name" data-class = '.head' 
-									class="live required" required >
+								<input type="text" name="username" value="<?php echo isset($userinfo['UserName']) ? $userinfo['UserName'] : ''; ?>" 
+								class="required" required >
 							<span class="span-notCorrect"><?php echo isset($formError['name']) ? $formError['name'] : "" ?></span>
 							</div>
 							<div class="field">
 								<label>Email</label>
-								<input type="text" name="desc" data-class = '.desc'
-								 	class="live required" required >
+								<input type="text" name="email" value="<?php echo isset($userinfo['Email']) ? $userinfo['Email'] : ''; ?>"
+								 	class="required" required  >
 							<span class="span-notCorrect"><?php echo isset($formError['desc']) ? $formError['desc'] : "" ?></span>
 							</div>
 							<div class="field">
 								<label>Full Name</label>
-								<input type="text" name="price" data-class = '.price' 
-									class="live required" required >
+								<input type="text" name="fullname"  value="<?php echo isset($userinfo['FullName']) ? $userinfo['FullName'] : ''; ?>"
+									class="required" required >
 							<span class="span-notCorrect"><?php echo isset($formError['price']) ? $formError['price'] : "" ?></span>
 							</div>
 							<div class="field">
 								<label>Old Password</label>
-								<input type="text" name="tags">
+								<input type="password" name="oldpass">
 							</div>
 							<div class="field">
 								<label>New Password</label>
-								<input type="text" name="tags" >
+								<input type="password" name="newpass" >
 							</div>
 							<div class="field">
 								<label>Confirm New Password</label>
-								<input type="text" name="tags" >
+								<input type="password" name="repass" >
 							</div>
+							<div class="field">
+								<label>Profile Image</label>
+								<input type="file" name="Image" >
 
-							<input type="submit" value="Edit Profile" class="btn ">
+							</div>
 							
-						</form>		
+							<input type="submit" value="Edit Profile" class="btn">
+						</form>
+								
 					</div>
-					<div class="show-product">
-						
+					<div class="show-product img-edit">
+						<?php if (empty($img_profile)):?>
+							<img src="files_upload/profileImg/images.png" class="profile-img">
+						<?php else: ?>
+							<img src="files_upload/profileImg/<?php echo $img_profile; ?>" class="profile-img">
+						<?php endif;?>
 					</div>
+					
 				</div>
 			</div>
 		</div>		
@@ -69,7 +88,7 @@ include "init.php";
 
 <?php
 else:
-
+header("location:index.php");
 endif;
 
 ?>

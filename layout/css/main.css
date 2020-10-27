@@ -600,17 +600,21 @@ padding-right: 10px;
 	margin-bottom: 7px;
 	color: #16a085;
 }
-.newItem .mypanel .panel-body .add-form .add-box input[type='text']{
+.newItem .mypanel .panel-body .add-form .add-box input[type='text'],
+.newItem .mypanel .panel-body .add-form .add-box input[type='password'],
+.newItem .mypanel .panel-body .add-form .add-box input[type='email']{
 	width: 100%;
 	display: block;
 	height: 35px;
 	border-radius: 5px;
 	outline: none;
-	border:1px solid #AAA;
-	transition: .7s;
+	border:2px solid #DDD;
+	transition: .4s;
 }
-.newItem .mypanel .panel-body .add-form .add-box input[type='text']:focus {
-	border:1px solid #16a085;
+.newItem .mypanel .panel-body .add-form .add-box input[type='text']:focus ,
+.newItem .mypanel .panel-body .add-form .add-box input[type='email']:focus, 
+.newItem .mypanel .panel-body .add-form .add-box input[type='password']:focus{
+	border:2px solid #16a085;
 }
 .newItem .mypanel .panel-body .add-form .add-box div .selectboxit-container  {
 	width: 80%;
@@ -872,3 +876,21 @@ padding-right: 10px;
 		top:6px;
 		left: -20px;
 	}
+ /* Edit Profile */
+
+.newItem .img-edit {
+	margin-top: 70px;
+}
+
+.newItem .img-edit .profile-img{
+	max-width: 75%;
+	max-height: 75%;
+	border: 1px solid #AAA;
+	border-radius: 5px;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); 
+}
+.newItem .mypanel .panel-body .add-form .add-box input[type='file'] {
+margin-top: 15px;
+
+}
+
