@@ -18,7 +18,7 @@ $userinfo = $stmt->fetch();
 $img_profile = $userinfo['Image_Profile'];
 
 ?>
-<div class="info-profile newItem">
+<div class="info-profile newItem editprofile">
 	<h3 class="MainHeader">Edit My Profile</h3>
 	<div class="container">
 		<?php if(isset($msgSuc)) { Redirect($msgSuc, "index.php"); }?> 
@@ -29,54 +29,53 @@ $img_profile = $userinfo['Image_Profile'];
 
 					<div class="add-form">
 						<form class="add-box">
-							<div class="field">
-								<label>User Name</label>
-								<input type="text" name="username" value="<?php echo isset($userinfo['UserName']) ? $userinfo['UserName'] : ''; ?>" 
-								class="required" required >
-							<span class="span-notCorrect"><?php echo isset($formError['name']) ? $formError['name'] : "" ?></span>
-							</div>
-							<div class="field">
-								<label>Email</label>
-								<input type="text" name="email" value="<?php echo isset($userinfo['Email']) ? $userinfo['Email'] : ''; ?>"
-								 	class="required" required  >
-							<span class="span-notCorrect"><?php echo isset($formError['desc']) ? $formError['desc'] : "" ?></span>
-							</div>
-							<div class="field">
-								<label>Full Name</label>
-								<input type="text" name="fullname"  value="<?php echo isset($userinfo['FullName']) ? $userinfo['FullName'] : ''; ?>"
+							<div class='info'>
+								<div class="field">
+									<label>User Name</label>
+									<input type="text" name="username" value="<?php echo isset($userinfo['UserName']) ? $userinfo['UserName'] : ''; ?>" 
 									class="required" required >
-							<span class="span-notCorrect"><?php echo isset($formError['price']) ? $formError['price'] : "" ?></span>
+								<span class="span-notCorrect"><?php echo isset($formError['name']) ? $formError['name'] : "" ?></span>
+								</div>
+								<div class="field">
+									<label>Email</label>
+									<input type="text" name="email" value="<?php echo isset($userinfo['Email']) ? $userinfo['Email'] : ''; ?>"
+										class="required" required  >
+								<span class="span-notCorrect"><?php echo isset($formError['desc']) ? $formError['desc'] : "" ?></span>
+								</div>
+								<div class="field">
+									<label>Full Name</label>
+									<input type="text" name="fullname"  value="<?php echo isset($userinfo['FullName']) ? $userinfo['FullName'] : ''; ?>"
+										class="required" required >
+								<span class="span-notCorrect"><?php echo isset($formError['price']) ? $formError['price'] : "" ?></span>
+								</div>
+								<div class="field">
+									<label>Old Password</label>
+									<input type="password" name="oldpass">
+								</div>
+								<div class="field">
+									<label>New Password</label>
+									<input type="password" name="newpass" >
+								</div>
+								<div class="field">
+									<label>Confirm New Password</label>
+									<input type="password" name="repass" >
+								</div>
+								
 							</div>
-							<div class="field">
-								<label>Old Password</label>
-								<input type="password" name="oldpass">
+							<div class="img-edit">
+								<div class="overlow"></div>
+									<?php if (empty($img_profile)):?>
+										<img src="files_upload/profileImg/images.png" class="profile-img">
+									<?php else: ?>
+										<img src="files_upload/profileImg/<?php echo $img_profile; ?>" class="profile-img">
+									<?php endif;?>
+								
 							</div>
-							<div class="field">
-								<label>New Password</label>
-								<input type="password" name="newpass" >
-							</div>
-							<div class="field">
-								<label>Confirm New Password</label>
-								<input type="password" name="repass" >
-							</div>
-							<div class="field">
-								<label>Profile Image</label>
-								<input type="file" name="Image" >
-
-							</div>
-							
-							<input type="submit" value="Edit Profile" class="btn">
+							<div class="clear"></div>
+							<input type="submit" value="Edit Profile" class="btn editprofile-btn">
 						</form>
 								
 					</div>
-					<div class="show-product img-edit">
-						<?php if (empty($img_profile)):?>
-							<img src="files_upload/profileImg/images.png" class="profile-img">
-						<?php else: ?>
-							<img src="files_upload/profileImg/<?php echo $img_profile; ?>" class="profile-img">
-						<?php endif;?>
-					</div>
-					
 				</div>
 			</div>
 		</div>		

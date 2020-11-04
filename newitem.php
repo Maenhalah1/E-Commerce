@@ -194,7 +194,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 								<span class="span-notCorrect"><?php echo isset($formError['category']) ? $formError['category'] : "" ?></span>
 							</div>	
 						
-								<input type="submit" value="Add new Product" class="btn ">
+								<input type="submit" value="Add new Product" class="btn newitem">
 							
 						</form>		
 					</div>

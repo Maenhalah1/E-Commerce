@@ -376,9 +376,7 @@ padding-right: 10px;
 	float: right;
 	padding: 50px 20px;
 }
-.left-log {
-	
-}
+
 .left-log img {
 	width: 100%;
 }
@@ -632,7 +630,7 @@ padding-right: 10px;
 .selectboxit-container ul .maincatg a{
 	font-weight: bold;
 }
-  .newItem .mypanel .panel-body .add-form .add-box input[type='submit'] {
+  .newItem .mypanel .panel-body .add-form .add-box input[type='submit'].newItem {
   	margin: 7px 20px;
   	background-color: #16a085;
   	color: #FFF;
@@ -877,20 +875,59 @@ padding-right: 10px;
 		left: -20px;
 	}
  /* Edit Profile */
+ .editprofile .mypanel .panel-body .add-form {
+	 width:100%;
+ }
+ .editprofile .mypanel .panel-body .add-form .add-box{
+	padding:0;
 
-.newItem .img-edit {
-	margin-top: 70px;
+ }
+ .editprofile .mypanel .panel-body .add-form .add-box .info {
+	 width: 58%;
+	 float:left;
+ } 
+ .editprofile .mypanel .panel-body .add-form .add-box .img-edit {
+	margin-top: 40px;
+	position: relative;
+	width:40%;
+	float:right;
 }
-
-.newItem .img-edit .profile-img{
-	max-width: 75%;
-	max-height: 75%;
+.editprofile .img-edit  .overlow {
+	padding: 0;
+	margin:0;
+	
+	border-radius: 5px;
+	z-index: 3;
+	position: absolute;
+	transition: .7s ease-in-out;
+}
+.editprofile .img-edit  .overlow:hover {
+	background-color: #00000080;
+}
+.editprofile .img-edit .profile-img{
+	max-width: 90%;
+	max-height: 90%;
 	border: 1px solid #AAA;
 	border-radius: 5px;
 	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); 
 }
-.newItem .mypanel .panel-body .add-form .add-box input[type='file'] {
+.editprofile .mypanel .panel-body .add-form .add-box input[type='file'] {
 margin-top: 15px;
+
+}
+.newItem .mypanel .panel-body .add-form .add-box input[type='submit'].editprofile-btn {
+	margin-top: 40px;
+	margin-bottom: 20px;
+	background-color: #16a085;
+	color: #FFF;
+	width: 25%;
+	padding: 9px;
+	font-weight: bold;
+	font-size: 17px;
+	position: relative;
+	left: 37%;
+	border:none;
+	outline: none;
 
 }
 

@@ -153,3 +153,9 @@ document.addEventListener("click", function(e){
 }
 
 });
+
+var img = document.querySelector(".editprofile .img-edit .profile-img");
+var overlow = document.querySelector(".editprofile .img-edit .overlow");
+console.log(overlow);
+overlow.style.height = img.offsetHeight + "px";
+overlow.style.width = img.offsetWidth + "px";
