@@ -46,7 +46,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 			if(empty($user)){
 				$RegErrors['username'] = "<span class='span-notCorrect'>Please Type Your Username</span>";
 			}
-			elseif(strlen($user) < 3) {
+			else if(strlen($user) < 3) {
 				$RegErrors['username'] = "<span class='span-notCorrect'>Username Must be Larger than 3 Letters</span>";
 			} else if (!preg_match("/^[a-zA-Z][0-9a-zA-Z]+$/", $user)) {
 				$RegErrors['username'] = "<span class='span-notCorrect'>The first letter  Must be a Character </span>";
@@ -63,7 +63,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 			if(empty($_POST['password'])) {
 				$RegErrors['password'] = "<span class='span-notCorrect'> Please Type Your Password</span>";
 			}
-			elseif ( sha1($_POST['password']) != sha1($_POST['re-password'])) {
+			else if ( sha1($_POST['password']) != sha1($_POST['re-password'])) {
 				$RegErrors['password'] = "<span class='span-notCorrect'> Confirm Password Doesn't Match With Password</span>";
 			}
 		}
